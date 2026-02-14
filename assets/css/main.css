@@ -2491,3 +2491,34 @@ table.default thead {
 table.default tbody tr:nth-child(2n+2) {
     background: rgba(44,47,51,0.05);
 }
+
+/* ============================= */
+/*   SECTION BACKGROUND FIX      */
+/* ============================= */
+
+/* Jede gerade Section dunkel */
+section:nth-of-type(even) {
+    background: #2f3a3d;
+    color: #ffffff;
+}
+
+/* Jede ungerade Section hell */
+section:nth-of-type(odd) {
+    background: #ffffff;
+    color: #2c2f33;
+}
+
+/* Sicherstellen, dass Text IMMER lesbar ist */
+section:nth-of-type(odd) h1,
+section:nth-of-type(odd) h2,
+section:nth-of-type(odd) h3,
+section:nth-of-type(odd) p {
+    color: #2c2f33;
+}
+
+section:nth-of-type(even) h1,
+section:nth-of-type(even) h2,
+section:nth-of-type(even) h3,
+section:nth-of-type(even) p {
+    color: #ffffff;
+}
