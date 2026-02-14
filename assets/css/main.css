@@ -2310,3 +2310,24 @@ input, select, textarea {
 			}
 
 		}
+
+/* Album Bild links neben Box */
+
+#one {
+    position: relative;
+}
+
+#one .album-image-left {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+#one .album-image-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
