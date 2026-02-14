@@ -2331,3 +2331,22 @@ input, select, textarea {
     display: block;
 }
 
+/* P. Haas Bild rechts neben Box */
+
+#two {
+    position: relative;
+}
+
+#two .phaas-image-right {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+#two .phaas-image-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
