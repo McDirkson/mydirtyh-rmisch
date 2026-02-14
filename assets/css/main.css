@@ -2350,3 +2350,144 @@ input, select, textarea {
     height: auto;
     display: block;
 }
+
+
+/* ============================= */
+/*        DESIGN UPDATE          */
+/* ============================= */
+
+/* ---- Body & Links ---- */
+
+body {
+    color: #2c2f33;
+}
+
+a {
+    color: #4db6ac;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #3a938a;
+}
+
+/* ---- Header minimal clean ---- */
+
+#header {
+    background: #2f3a3d;
+    color: #ffffff;
+}
+
+#header a {
+    color: #ffffff;
+}
+
+#header nav ul li a:hover {
+    background: rgba(255,255,255,0.08);
+    border-radius: 0.3em;
+}
+
+/* ---- Buttons modern ---- */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button,
+button {
+    background-color: #4db6ac;
+    color: #ffffff;
+    border-radius: 3em;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    transition: background-color 0.2s ease,
+                transform 0.15s ease,
+                box-shadow 0.15s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover,
+button:hover {
+    background-color: #3a938a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+.button:active,
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* ---- Inputs modern ---- */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    border: 2px solid #d6d8da;
+    border-radius: 0.5em;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4db6ac;
+    box-shadow: 0 0 8px rgba(77,182,172,0.3);
+}
+
+/* ---- Box / Content Cards ---- */
+
+.box {
+    border-radius: 0.6em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ---- Gallery modern hover ---- */
+
+.gallery article {
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.gallery article:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+.gallery article .image:before {
+    background: rgba(0,0,0,0.08);
+    transition: background 0.3s ease;
+}
+
+.gallery article:hover .image:before {
+    background: rgba(0,0,0,0.15);
+}
+
+/* ---- Popup moderner ---- */
+
+.poptrox-popup {
+    border-radius: 0.6em;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ---- Tables cleaner ---- */
+
+table.default thead {
+    background: #2c2f33;
+    color: #ffffff;
+}
+
+table.default tbody tr:nth-child(2n+2) {
+    background: rgba(44,47,51,0.05);
+}
