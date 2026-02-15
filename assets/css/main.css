@@ -2537,3 +2537,31 @@ a {
     color: #666666 !important;
     font-weight: normal !important;
 }
+
+/* Fließtext in Content-Boxen und Abschnitten */
+.content p,
+.content li,
+.box p,
+.box li {
+    color: #666666 !important;  /* Grau für normalen Text */
+    font-weight: normal !important;
+}
+
+/* Überschriften innerhalb Content/Box */
+.content h1,
+.content h2,
+.content h3,
+.box h1,
+.box h2,
+.box h3 {
+    color: #000000 !important; /* Schwarz */
+    font-weight: bold !important;
+}
+
+/* Links innerhalb Content/Box normal und grau */
+.content a,
+.box a {
+    color: #666666 !important;
+    font-weight: normal !important;
+}
+
