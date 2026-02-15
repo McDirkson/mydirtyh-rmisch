@@ -2565,14 +2565,24 @@ a {
     font-weight: normal !important;
 }
 
-/* ------------------------------ */
-/* P.HAAS Hämorrhoiden-Creme Bild */
-/* ------------------------------ */
+/* ================================
+   P.HAAS Bild – absolute Kontrolle
+   ================================ */
+
+/* Container-Regel – sorgt dafür, dass das Bild nach rechts geht */
 .phaas-image-right {
-    display: block;       /* Bild als Blockelement, einfacher zu handhaben */
-    float: right;         /* Nach rechts schieben */
-    margin-left: 500px;    /* Abstand zum Text links */
-    width: auto;          /* Originalbreite beibehalten */
-    max-width: none;      /* Keine Größenbeschränkung */
-    height: auto;         /* Proportionen bleiben erhalten */
+    float: right !important;        /* Bild nach rechts schieben */
+    margin-left: 350px !important;   /* Abstand vom Text / Container nach links, anpassen nach Bedarf */
+    margin-top: 0 !important;       /* optional */
+    display: block !important;      /* Block-Level, damit float wirkt */
+    width: auto !important;         /* Containerbreite nicht einschränken */
+    max-width: none !important;     /* keine Begrenzung */
+    height: auto !important;        /* Höhe proportional */
+}
+
+/* Bild selbst – Größe frei wählbar */
+.phaas-image-right img {
+    width: 400px !important;        /* Breite des Bildes, anpassen nach Wunsch */
+    height: auto !important;        /* Höhe proportional */
+    display: block !important;      /* sauber im Container */
 }
