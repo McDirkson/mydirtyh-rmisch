@@ -2572,7 +2572,7 @@ a {
 /* Container-Regel – sorgt dafür, dass das Bild nach rechts geht */
 .phaas-image-right {
     float: right !important;        /* Bild nach rechts schieben */
-    margin-left: 700px !important;   /* Abstand vom Text / Container nach links, anpassen nach Bedarf */
+    margin-left: 500px !important;   /* Abstand vom Text / Container nach links, anpassen nach Bedarf */
     margin-top: 0 !important;       /* optional */
     display: block !important;      /* Block-Level, damit float wirkt */
     width: auto !important;         /* Containerbreite nicht einschränken */
