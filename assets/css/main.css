@@ -2519,3 +2519,21 @@ a, .button {
 .gallery img {
     border: 2px solid #f0f0f0;
 }
+
+/* Fließtext überall */
+body, p, li, .content, .content p, .content li, .box p, .box li {
+    color: #666666 !important;  /* Grau für normalen Text */
+    font-weight: normal !important;
+}
+
+/* Überschriften fett und schwarz */
+h1, h2, h3, h4, h5, h6, .content h1, .content h2, .box h1, .box h2 {
+    color: #000000 !important; /* Schwarz */
+    font-weight: bold !important;
+}
+
+/* Optional: Links im Text grau, normalgewicht */
+a {
+    color: #666666 !important;
+    font-weight: normal !important;
+}
