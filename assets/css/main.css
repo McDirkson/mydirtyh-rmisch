@@ -2582,7 +2582,7 @@ a {
 
 /* Bild selbst – Größe frei wählbar */
 .phaas-image-right img {
-    width: 400px !important;        /* Breite des Bildes, anpassen nach Wunsch */
+    width: 1000px !important;        /* Breite des Bildes, anpassen nach Wunsch */
     height: auto !important;        /* Höhe proportional */
     display: block !important;      /* sauber im Container */
 }
