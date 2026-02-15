@@ -2565,17 +2565,14 @@ a {
     font-weight: normal !important;
 }
 
-/* P.HAAS Creme Bild: unabhängig und nach rechts verschoben */
-#two {
-    position: relative; /* macht die Sektion zum Bezugspunkt */
-}
-
+/* ------------------------------ */
+/* P.HAAS Hämorrhoiden-Creme Bild */
+/* ------------------------------ */
 .phaas-image-right {
-    position: absolute;  /* komplett unabhängig vom Text */
-    top: 50%;            /* vertikal mittig */
-    right: 50px;         /* Abstand vom rechten Rand der Sektion */
-    transform: translateY(-50%); /* zentriert vertikal */
-    max-width: 400px;    /* Bildgröße anpassen */
-    height: auto;        /* proportional */
-    z-index: 1;          /* über Text, falls nötig */
+    display: block;       /* Bild als Blockelement, einfacher zu handhaben */
+    float: right;         /* Nach rechts schieben */
+    margin-left: 500px;    /* Abstand zum Text links */
+    width: auto;          /* Originalbreite beibehalten */
+    max-width: none;      /* Keine Größenbeschränkung */
+    height: auto;         /* Proportionen bleiben erhalten */
 }
