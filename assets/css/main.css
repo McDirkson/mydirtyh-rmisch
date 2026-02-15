@@ -2576,9 +2576,9 @@ a {
 /* Bild unabhängig machen */
 .phaas-image-right {
     position: absolute !important;   /* Bild frei positionierbar */
-    top: 50px !important;            /* Abstand nach oben */
-    right: 50px !important;          /* Abstand vom rechten Rand */
-    width: 400px !important;         /* feste Größe */
+    top: 500px !important;            /* Abstand nach oben */
+    right: 300px !important;          /* Abstand vom rechten Rand */
+    width: 600px !important;         /* feste Größe */
     height: auto !important;
     z-index: 999 !important;         /* vor allem sichtbar */
 }
