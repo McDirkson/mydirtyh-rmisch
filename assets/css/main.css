@@ -2492,34 +2492,30 @@ table.default tbody tr:nth-child(2n+2) {
     background: rgba(44,47,51,0.05);
 }
 
-/* ============================= */
-/*   SOFT WHITE ALTERNATING FIX */
-/* ============================= */
+/* ===== Hintergrundfarben für Abschnitte abwechselnd ===== */
+#intro    { background-color: #ffffff; color: #000000; }
+#one      { background-color: #f8f8f8; color: #000000; }
+#two      { background-color: #ffffff; color: #000000; }
+#work     { background-color: #f8f8f8; color: #000000; }
+#contact  { background-color: #ffffff; color: #000000; }
 
-/* Helles Weiß */
-.main.style1,
-.main.style3.primary {
-    background: #ffffff !important;
-    color: #2c2f33 !important;
+/* ===== Buttons & Links ===== */
+a, .button {
+    color: #006400;  /* dunkelgrün */
 }
 
-/* Leicht dunkleres Weiß */
-.main.style2,
-.main.style3.secondary {
-    background: #f2f3f5 !important;
-    color: #2c2f33 !important;
+/* Optional: Hover-Farbe für Buttons */
+.button:hover {
+    background-color: #006400;
+    color: #ffffff;
 }
 
-/* Dark Overlay entfernen */
-.main.dark {
-    background-image: none !important;
+/* ===== Text innerhalb der Boxen ===== */
+.content, .content p, .content ul, .content li, .content h1, .content h2, .content h3 {
+    color: #000000;
 }
 
-/* Text immer dunkel auf hellem Hintergrund */
-.main h1,
-.main h2,
-.main h3,
-.main p,
-.main li {
-    color: #2c2f33 !important;
+/* ===== Galerie-Anpassung, falls nötig ===== */
+.gallery img {
+    border: 2px solid #f0f0f0;
 }
