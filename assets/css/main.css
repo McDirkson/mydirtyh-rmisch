@@ -2565,17 +2565,17 @@ a {
     font-weight: normal !important;
 }
 
-/* P.HAAS Creme Bild: absolute Position nach rechts */
+/* P.HAAS Creme Bild: unabhängig und nach rechts verschoben */
 #two {
-    position: relative; /* Container als Bezugspunkt für das Bild */
+    position: relative; /* macht die Sektion zum Bezugspunkt */
 }
 
 .phaas-image-right {
-    position: absolute;
-    top: 50%;             /* vertikal mittig */
-    right: 50px;          /* Abstand von rechter Seite */
-    transform: translateY(-50%); /* perfekt zentriert */
-    max-width: 60%;       /* Bildgröße anpassen */
-    height: auto;         /* Verhältnis beibehalten */
-    z-index: 1;           /* sicherstellen, dass es vor Text liegt */
+    position: absolute;  /* komplett unabhängig vom Text */
+    top: 50%;            /* vertikal mittig */
+    right: 50px;         /* Abstand vom rechten Rand der Sektion */
+    transform: translateY(-50%); /* zentriert vertikal */
+    max-width: 400px;    /* Bildgröße anpassen */
+    height: auto;        /* proportional */
+    z-index: 1;          /* über Text, falls nötig */
 }
