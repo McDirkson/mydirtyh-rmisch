@@ -2565,20 +2565,11 @@ a {
     font-weight: normal !important;
 }
 
-/* P.HAAS Creme Bild Position */
+/* P.HAAS Creme Bild fest nach rechts schieben und größer machen */
 .phaas-image-right {
-    margin-left: 100px;  /* Abstand nach links auf Desktop */
-    max-width: 55%;      /* Optional: Bild nicht zu groß machen */
-}
-
-/* P.HAAS Creme Bild sauber nach rechts verschieben */
-.phaas-image-right {
-    display: flex;             /* Flex-Container aktivieren */
-    justify-content: flex-end; /* Inhalt nach rechts schieben */
-    max-width: 55%;            /* Optional: Bild nicht zu groß machen */
-}
-
-.phaas-image-right img {
-    width: 100%;               /* Bild füllt Container */
-    height: auto;              /* Proportionen beibehalten */
+    float: right !important;       /* Bild rechts positionieren */
+    margin-left: 200px !important; /* Abstand nach links erzwingen */
+    max-width: 60% !important;     /* Bildgröße etwas größer */
+    width: auto !important;        /* Originalproportion beibehalten */
+    height: auto !important;       /* Originalproportion beibehalten */
 }
