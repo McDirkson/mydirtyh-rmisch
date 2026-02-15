@@ -2567,6 +2567,6 @@ a {
 
 /* P.HAAS Creme Bild Position */
 .phaas-image-right {
-    margin-left: 50px;  /* Abstand nach links auf Desktop */
+    margin-left: 100px;  /* Abstand nach links auf Desktop */
     max-width: 55%;      /* Optional: Bild nicht zu groß machen */
 }
