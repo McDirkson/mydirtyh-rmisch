@@ -2565,24 +2565,26 @@ a {
     font-weight: normal !important;
 }
 
-/* ================================
-   P.HAAS Bild – absolute Kontrolle
-   ================================ */
-
-/* Container-Regel – sorgt dafür, dass das Bild nach rechts geht */
-.phaas-image-right {
-    float: right !important;        /* Bild nach rechts schieben */
-    margin-left: 500px !important;   /* Abstand vom Text / Container nach links, anpassen nach Bedarf */
-    margin-top: 0 !important;       /* optional */
-    display: block !important;      /* Block-Level, damit float wirkt */
-    width: auto !important;         /* Containerbreite nicht einschränken */
-    max-width: none !important;     /* keine Begrenzung */
-    height: auto !important;        /* Höhe proportional */
+/* Eltern-Container vorbereiten */
+#two {
+    position: relative !important;   /* Referenz für das absolute Bild */
+    width: 100% !important;          /* volle Breite */
+    max-width: none !important;      /* alle Begrenzungen aufheben */
+    overflow: visible !important;    /* Bild darf rausragen */
 }
 
-/* Bild selbst – Größe frei wählbar */
+/* Bild unabhängig machen */
+.phaas-image-right {
+    position: absolute !important;   /* Bild frei positionierbar */
+    top: 50px !important;            /* Abstand nach oben */
+    right: 50px !important;          /* Abstand vom rechten Rand */
+    width: 400px !important;         /* feste Größe */
+    height: auto !important;
+    z-index: 999 !important;         /* vor allem sichtbar */
+}
+
+/* Bild selbst anpassen */
 .phaas-image-right img {
-    width: 1000px !important;        /* Breite des Bildes, anpassen nach Wunsch */
-    height: auto !important;        /* Höhe proportional */
-    display: block !important;      /* sauber im Container */
+    width: 100% !important;
+    height: auto !important;
 }
