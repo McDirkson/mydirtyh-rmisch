@@ -2568,7 +2568,7 @@ a {
 /* P.HAAS Creme Bild fest nach rechts schieben und größer machen */
 .phaas-image-right {
     float: right !important;       /* Bild rechts positionieren */
-    margin-left: 200px !important; /* Abstand nach links erzwingen */
+    margin-left: 500px !important; /* Abstand nach links erzwingen */
     max-width: 60% !important;     /* Bildgröße etwas größer */
     width: auto !important;        /* Originalproportion beibehalten */
     height: auto !important;       /* Originalproportion beibehalten */
