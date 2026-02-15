@@ -2493,34 +2493,33 @@ table.default tbody tr:nth-child(2n+2) {
 }
 
 /* ============================= */
-/*   BACKGROUND FIX BIG PICTURE */
+/*   SOFT WHITE ALTERNATING FIX */
 /* ============================= */
 
-/* Alle main Sections erstmal neutralisieren */
-.main {
+/* Helles Weiß */
+.main.style1,
+.main.style3.primary {
     background: #ffffff !important;
     color: #2c2f33 !important;
 }
 
-/* Jede zweite main Section dunkel */
-.main:nth-of-type(even) {
-    background: #2f3a3d !important;
-    color: #ffffff !important;
+/* Leicht dunkleres Weiß */
+.main.style2,
+.main.style3.secondary {
+    background: #f2f3f5 !important;
+    color: #2c2f33 !important;
 }
 
-/* Text immer passend */
-.main:nth-of-type(even) h1,
-.main:nth-of-type(even) h2,
-.main:nth-of-type(even) h3,
-.main:nth-of-type(even) p,
-.main:nth-of-type(even) li {
-    color: #ffffff !important;
+/* Dark Overlay entfernen */
+.main.dark {
+    background-image: none !important;
 }
 
-.main:nth-of-type(odd) h1,
-.main:nth-of-type(odd) h2,
-.main:nth-of-type(odd) h3,
-.main:nth-of-type(odd) p,
-.main:nth-of-type(odd) li {
+/* Text immer dunkel auf hellem Hintergrund */
+.main h1,
+.main h2,
+.main h3,
+.main p,
+.main li {
     color: #2c2f33 !important;
 }
