@@ -2565,11 +2565,17 @@ a {
     font-weight: normal !important;
 }
 
-/* P.HAAS Creme Bild fest nach rechts schieben und größer machen */
+/* P.HAAS Creme Bild: absolute Position nach rechts */
+#two {
+    position: relative; /* Container als Bezugspunkt für das Bild */
+}
+
 .phaas-image-right {
-    float: right !important;       /* Bild rechts positionieren */
-    margin-left: 1500px !important; /* Abstand nach links erzwingen */
-    max-width: 60% !important;     /* Bildgröße etwas größer */
-    width: auto !important;        /* Originalproportion beibehalten */
-    height: auto !important;       /* Originalproportion beibehalten */
+    position: absolute;
+    top: 50%;             /* vertikal mittig */
+    right: 50px;          /* Abstand von rechter Seite */
+    transform: translateY(-50%); /* perfekt zentriert */
+    max-width: 60%;       /* Bildgröße anpassen */
+    height: auto;         /* Verhältnis beibehalten */
+    z-index: 1;           /* sicherstellen, dass es vor Text liegt */
 }
